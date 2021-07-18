@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"  initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HangMan!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  
+    <body>
+
+     
+     <div class="main">
+        <div class="header">
+            <h1 class="center-text" style="text-decoration: underline; font-size: 50px;" >Play HangMan!</h1>
+            <p class="center-text">Guess the correct fruit Name, or get hanged!</p>
+            <p class="center-text"> Use your keyboard to type the letters.</p>
+        </div>
+        <div class="container">
+          <div class="image-container">
+          
+              <img src="hangman1.JPG" alt="hangman"  style="border : 5px solid black" id="hangman-image">
+           
+          </div>
+
+        <div class="lives_and_word">
+          <div id="lives" class="center"></div>
+          
+          <div id="word" class="center"></div>
+
+        </div>
+        </div>
+      </div>
+            
+        <div class="modal hide center" role="dialog" id="modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="gameover">Game Over</h5>      
+              </div>
+              <div class="modal-body">
+                  <p id="ptag">You Lost</p>
+                  <img id="modal-body" src="hangman.gif" alt="hangman" height="1%" width="1%">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="reloadButton">Restart</button>
+                <button type="button" class="btn btn-danger" id="closeButton">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+    <script
+
+      src="https://kit.fontawesome.com/065281acf5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
